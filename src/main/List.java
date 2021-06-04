@@ -10,7 +10,7 @@ public class List {
 	public List() {
 		infoList = new ArrayList<Info>();
 	}
-	
+	//This method adds a hike with a name, a location and the duration of the hike
 	public void addHike(String hikeName, String hikeLocation, String hikeDuration) {
 		hikeDur = Integer.parseInt(hikeDuration);
 		if(this.infoList.size() == 0) {
@@ -30,7 +30,7 @@ public class List {
 			}
 		}
 	}
-	
+	//This method removes a hiker
 	public void removeHiker(String hikeName) {
 		for(int i = this.infoList.size()- 1; i >= 0; i--) {
 			if(hikeName.equalsIgnoreCase(this.infoList.get(i).getName())) {
@@ -38,7 +38,7 @@ public class List {
 			}
 		}
 	}
-	
+	//This method creates a list of all the information of the hikes
 	public String listAll() {
 		String total = "";
 		for(int i = 0; i <this.infoList.size(); i++) {
@@ -46,7 +46,7 @@ public class List {
 		}
 		return total;
 	}
-	
+	//This method gets the duration of the hike by finding the name of the hike
 	public String totalDurationName(String hikeName) {
 		int total = 0;
 		for(int i = 0; i < this.infoList.size(); i++) {
@@ -56,7 +56,7 @@ public class List {
 		}
 		return "" + total;
 	}
-	
+	//This method gets the duration of the hike by finding the location
 	public String totalDurationLocation(String hikeLocation) {
 		int total = 0;
 		for(int i = 0; i < this.infoList.size(); i++) {

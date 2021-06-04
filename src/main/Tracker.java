@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 import main.JOP;
 
 public class Tracker {
-	
+	//This class helps manage the visuals and the list
 	private boolean running = true;
 	private List _l = new List();
 
@@ -39,7 +39,7 @@ public class Tracker {
 	}
 	
 
-	
+	//This method creates a pop out to ask what you want to do
 	private void ManageList() {
 		String manageChoice = JOP.in("Write 'add' to create a new location and 'remove' to remove a location");
 		if(manageChoice.equalsIgnoreCase("add")) {
@@ -54,7 +54,7 @@ public class Tracker {
 		}
 
 	}
-	
+	//This method creates a pop out that displays the stats of the hikes
 	private void ViewStats() {
 		String viewChoice = JOP.in("To see the list type 'list' and to see the durations write 'duration'");
 		if(viewChoice.equals("list")) {

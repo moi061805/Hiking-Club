@@ -4,7 +4,7 @@ package main;
 import java.util.ArrayList;
 
 public class Info {
-	
+	//This class creates the informantion of a hike
 	String name;
 	String location;
 	int duration;
